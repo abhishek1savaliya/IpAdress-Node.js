@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
     const ipAddress = req.socket.remoteAddress;
     res.send(`Your IP address is: ${ipAddress}`);
 });
